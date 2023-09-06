@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email-List</title>
-    <!-- Css -->
-    <link rel="stylesheet" href="./css/style.css">
     <!-- Vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- Axios -->
@@ -15,7 +13,9 @@
 </head>
 <body>
     <div id="app">
-
+        <ul v-for="item in emails">
+            <li>{{item}}</li>
+        </ul>
     </div>
 </body>
 </html>
